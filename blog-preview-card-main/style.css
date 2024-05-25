@@ -1,0 +1,89 @@
+@keyframes mymove {
+    from {color: black;}
+    to {color: azure;}
+  }
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 217, 0);
+    padding: 50px;
+}
+
+.card{
+    @media(min-width: 300px){
+        width: 21.5em; 
+        min-width:275px; 
+    }
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid grey;
+    box-shadow: 15px 15px 1px black;
+    padding: 10px;  
+}
+
+.entry-summary{
+    color: grey;
+    font-size: 16px;
+}
+
+h2{
+    color: rgb(255, 217, 0);
+}
+
+h1, h2, h3, h4, h5, h6, a, p{
+    font-family: "Figtree";
+    
+}
+
+.header-for-entry-image{
+    border-radius: 10px;
+    box-sizing: content-box; 
+    width: 100%;
+}
+
+.entry-category{
+    background-color: rgb(255, 217, 0);
+    padding: 10px;
+    border-radius: 7px;
+    box-sizing:content-box;
+    width: 4.25em
+}
+
+.author-picture{
+    vertical-align: middle;
+    margin-right: 1em
+}
+
+
+
+span{
+    padding-top: 10px;
+    display: flex;
+    
+}
+
+.attribution{
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    -ms-transform: translateY(100%);
+    transform: translateY(200%);
+}
+
+.entry-author:hover, .entry-author:focus{
+    border-radius: 5px;
+    background-color: rgb(255, 217, 0);
+   
+}
+
+h2:hover, h2:focus{
+    color: rgb(255, 251, 0);
+}
+
+.entry-category:hover, .entry-category:focus{
+    
+    animation: mymove .15s 1 forwards;
+}
+
